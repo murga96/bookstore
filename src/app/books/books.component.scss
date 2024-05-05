@@ -19,9 +19,14 @@
     padding-block: 0.5rem;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+    color: #673ab7;
 }

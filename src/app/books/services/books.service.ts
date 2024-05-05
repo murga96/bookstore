@@ -22,4 +22,8 @@ export class BooksService {
   loadBooks() {
     this.books$.next(this.bookDataAccessService.findBooks());
   }
+
+  getBook(id: string): Book | undefined {
+    return this.bookDataAccessService.findBookById(id);
+  }
 }
