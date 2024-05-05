@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 2rem;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    // font-size: $base-font;
+    font-weight: normal;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  
+  ul {
+    text-align: left;
+  }
