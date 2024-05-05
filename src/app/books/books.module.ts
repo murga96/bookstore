@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BooksRoutingModule } from './books-routing.module';
 import { BooksComponent } from './books.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { BooksComponent } from './books.component';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     BooksRoutingModule
   ]
 })
