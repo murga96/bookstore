@@ -1,19 +1,21 @@
-<header>
-    <span class="back-title" (click)="goBack()">
-        <span class="material-symbols-outlined back-icon">arrow_back</span>Back
-    </span>
-</header>
-<mat-card>
-    <mat-card-content>
-        <p *ngIf="!book;else bookDefined">No book found!!</p>
-        <ng-template #bookDefined>
-            <h2>{{book?.title}}</h2>
-            <p>{{book?.description}}</p>
-            <hr>
-            <p><b>Author:</b> {{book?.author}}</p>
-            <hr>
-            <p><b>Editorial:</b> {{book?.editorial}}</p>
-            <hr>
-        </ng-template>
-    </mat-card-content>
-</mat-card>
+<div class="container">
+    <header>
+        <span class="back-title" (click)="goBack()">
+            <span class="material-symbols-outlined back-icon">arrow_back</span>Back
+        </span>
+    </header>
+    <mat-card>
+        <mat-card-content>
+            <p *ngIf="!book;else bookDefined">No book found!!</p>
+            <ng-template #bookDefined>
+                <h2>{{book?.title}}</h2>
+                <p>{{book?.description}}</p>
+                <hr>
+                <p><b>Author:</b> {{book?.author}}</p>
+                <hr>
+                <p><b>Editorial:</b> {{book?.editorial}}</p>
+                <hr>
+            </ng-template>
+        </mat-card-content>
+    </mat-card>
+</div>
